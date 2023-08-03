@@ -1342,12 +1342,13 @@ section {
   background: #ebf7fc;
 }
 
-#footer .footer-newsletter {
-  padding: 50px 0;
-  background: #f0f9fd;
+#footer .main-footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
   text-align: center;
-  font-size: 15px;
 }
+
 
 #footer .footer-newsletter h4 {
   font-size: 24px;
@@ -1580,4 +1581,14 @@ section {
 .testimonial-author p {
   font-size: 16px;
   color: #888;
+}
+.marquee {
+  animation: marquee 15s linear infinite;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
 }
