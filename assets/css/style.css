@@ -939,12 +939,20 @@ section {
   padding: 0;
 }
 
+
+.testimonials .section-header {
+  margin-bottom: 40px;
+}
+
+.testimonials .testimonials-carousel,
+.testimonials .testimonials-slider {
+  ove
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
 .testimonials {
   padding: 80px 0;
-  background: url("../img/cta-bg.jpg") no-repeat;
+  /* background: url("../img/cta-bg.jpg") no-repeat; */
   background-position: center center;
   background-size: cover;
   position: relative;
@@ -957,16 +965,8 @@ section {
   right: 0;
   top: 0;
   bottom: 0;
-  background: rgba(11, 41, 55, 0.9);
-}
-
-.testimonials .section-header {
-  margin-bottom: 40px;
-}
-
-.testimonials .testimonials-carousel,
-.testimonials .testimonials-slider {
-  overflow: hidden;
+  /* background: rgba(11, 41, 55, 0.9); */
+}rflow: hidden;
 }
 
 .testimonials .testimonial-item {
@@ -1505,4 +1505,79 @@ section {
     float: none;
     text-align: center;
   }
+}
+
+  /* Background color for section */
+  #skills-partners {
+    background-color: #f4fbfe;
+    padding: 20px 0;
+  }
+
+  .section-title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .partner-logo {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .partner-logo img {
+    max-height: 100px;
+  }
+/* Custom CSS for Testimonial Carousel */
+.testimonials {
+  background-color: #f9f9f9; /* Set a light background color */
+  padding: 60px 0; /* Add some spacing around the carousel */
+}
+
+.carousel-inner {
+  border-radius: 10px;
+  overflow: hidden; /* Hide the overflowing content */
+}/* Custom CSS for Testimonials Section */
+.testimonials {
+  background-color: #f9f9f9; /* Set a light background color */
+  padding: 60px 0; /* Add some spacing around the testimonials */
+}
+
+.testimonial-card {
+  background-color: #ffffff; /* Set a white background for each testimonial card */
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  border-radius: 10px;
+}
+
+.testimonial-text {
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.testimonial-text i {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #f39c12; /* Use a nice color for the quote icon */
+}
+
+.testimonial-author {
+  text-align: center;
+}
+
+.testimonial-author img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+}
+
+.testimonial-author h5 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.testimonial-author p {
+  font-size: 16px;
+  color: #888;
 }
