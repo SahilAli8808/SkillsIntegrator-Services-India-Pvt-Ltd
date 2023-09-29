@@ -65,12 +65,12 @@ h6 {
   background: #fff;
   transition: all 0.5s;
   z-index: 997;
-  padding: 20px 0;
+  padding: 14px 0;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.05);
 }
 
 #header .logo {
-  font-size: 28px;
+  font-size: 18px;
   margin: 0;
   padding: 0;
   line-height: 1;
@@ -318,7 +318,7 @@ h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 80vh;
+  height: 70vh;
   background: #f9f9f9;
 }
 
@@ -970,7 +970,7 @@ section {
 
 .testimonials .testimonial-item .testimonial-img {
   width: 100px;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   border: 6px solid rgba(255, 255, 255, 0.15);
   margin: 0 auto;
 }
@@ -1528,7 +1528,7 @@ section {
 }
 
 .carousel-inner {
-  border-radius: 10px;
+  /* border-radius: 10px; */
   overflow: hidden; /* Hide the overflowing content */
 }/* Custom CSS for Testimonials Section */
 .testimonials {
@@ -1540,7 +1540,7 @@ section {
   background-color: #ffffff; /* Set a white background for each testimonial card */
   padding: 30px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
-  border-radius: 10px;
+  /* border-radius: 10px; */
   min-height: 490px;
 }
 
@@ -1563,7 +1563,7 @@ section {
 }
 
 .testimonial-author img {
-  border-radius: 50%;
+  /* border-radius: 50%; */
   width: 80px; 
   height: 80px;
   object-fit: cover;
