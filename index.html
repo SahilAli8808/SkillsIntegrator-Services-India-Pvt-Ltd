@@ -539,7 +539,7 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form  method="post" role="form" class="php-email-form" id="contact-form">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -569,6 +569,33 @@
       </div>
     </section>
     <!-- End Contact Section -->
+    
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script>
+  $("#contact-form").submit(function(e) {
+    e.preventDefault();
+    var form = $(this);
+    var url = form.attr('action') || 'https://script.google.com/macros/s/AKfycbxHRfec4OyeCAm2FR1_nibp0Tol9hTqOijku4vpGd8Lc-ulJtVCE_LlG66tABzo-aX3/exec';
+    var formData = form.serialize();
+
+    $.ajax({
+      type: "POST",
+      url: url,
+      data: formData,
+      success: function(response) {
+        form.find(".loading").hide();
+        form.find(".sent-message").show();
+        form[0].reset();
+      },
+      error: function(response) {
+        form.find(".loading").hide();
+        form.find(".error-message").show().text('Error occurred while sending the message.');
+      }
+    });
+  });
+</script>
 
 
   </main><!-- End #main -->
