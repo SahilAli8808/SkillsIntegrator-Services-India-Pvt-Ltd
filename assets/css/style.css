@@ -1,14 +1,6 @@
-/**
-* Template Name: Butterfly
-* Updated: May 30 2023 with Bootstrap v5.3.0
-* Template URL: https://bootstrapmade.com/butterfly-free-bootstrap-theme/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
+*{
+  box-sizing: border-box;
+}
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
@@ -966,7 +958,9 @@ section {
   top: 0;
   bottom: 0;
   /* background: rgba(11, 41, 55, 0.9); */
-}rflow: hidden;
+}
+
+
 }
 
 .testimonials .testimonial-item {
@@ -1547,12 +1541,15 @@ section {
   padding: 30px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
   border-radius: 10px;
+  min-height: 490px;
 }
 
 .testimonial-text {
+  padding: 10px;
   font-size: 18px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   text-align: center;
+  min-height: max-content;
 }
 
 .testimonial-text i {
@@ -1561,15 +1558,15 @@ section {
   color: #f39c12; /* Use a nice color for the quote icon */
 }
 
-.testimonial-author {
+.testimonial-author{
   text-align: center;
 }
 
 .testimonial-author img {
-  width: 80px;
-  height: 80px;
   border-radius: 50%;
-  margin: 0 auto 10px;
+  width: 80px; 
+  height: 80px;
+  object-fit: cover;
 }
 
 .testimonial-author h5 {
@@ -1591,4 +1588,13 @@ section {
 @keyframes marquee {
   0% { transform: translateX(100%); }
   100% { transform: translateX(-100%); }
+}
+
+.service-img{
+  min-height: 100px;
+  max-height: 200px !important;
+  object-fit: cover;
+}
+.carousel-item{
+  max-height: 500px;
 }
