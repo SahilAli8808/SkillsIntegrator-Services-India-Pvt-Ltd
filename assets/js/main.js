@@ -1,10 +1,4 @@
-/**
-* Template Name: Butterfly
-* Updated: May 30 2023 with Bootstrap v5.3.0
-* Template URL: https://bootstrapmade.com/butterfly-free-bootstrap-theme/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 (function() {
   "use strict";
 
@@ -224,33 +218,6 @@
     selector: '.galleery-lightbox'
   });
 
-//   /**
-//    * Initiate Pure Counter 
-//    */
-//   new PureCounter();
+
 
 })()
-// ----------------
-// function updateTimer() {
-//   const targetDate = new Date("2023-12-31T23:59:59"); // Replace this with your target date and time
-//   const now = new Date();
-//   const timeDifference = targetDate - now;
-
-//   if (timeDifference <= 0) {
-//     document.querySelector('.counter').innerHTML = "Time's up!"; // Show a message when the timer expires
-//     return;
-//   }
-
-//   const totalSeconds = Math.floor(timeDifference / 1000);
-//   const days = Math.floor(totalSeconds / (3600 * 24));
-//   const hours = Math.floor((totalSeconds % (3600 * 24)) / 3600);
-//   const minutes = Math.floor((totalSeconds % 3600) / 60);
-//   const seconds = totalSeconds % 60;
-
-//   document.querySelector('.days .value').textContent = days.toString().padStart(2, '0');
-//   document.querySelector('.hours .value').textContent = hours.toString().padStart(2, '0');
-//   document.querySelector('.minutes .value').textContent = minutes.toString().padStart(2, '0');
-//   document.querySelector('.seconds .value').textContent = seconds.toString().padStart(2, '0');
-// }
-
-// setInterval(updateTimer, 1000); // Update the timer every second
